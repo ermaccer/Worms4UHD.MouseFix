@@ -14,3 +14,5 @@ the system one seems to fix the cursor stuttering.
 
 # Installation
 Extract .zip file from Releases section to root game folder (where executable is).
+
+This project uses [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader).
