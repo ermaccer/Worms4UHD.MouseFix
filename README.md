@@ -11,3 +11,6 @@ cursor position but this one only sets the position to internal game position.
 
 It looks like there might be some kind of race error between these two functions, disabling
 the system one seems to fix the cursor stuttering.
+
+# Installation
+Extract .zip file from Releases section to root game folder (where executable is).
