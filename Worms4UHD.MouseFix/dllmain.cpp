@@ -51,8 +51,6 @@ int WINAPI SetMousePosDirectly(int ptr, int X, int Y)
     return 0;
 }
 
-HMODULE myhModule;
-
 void Init()
 {
     #ifdef DEBUG
@@ -82,7 +80,6 @@ BOOL APIENTRY DllMain(HMODULE hModule,
     switch (ul_reason_for_call)
     {
     case DLL_PROCESS_ATTACH:
-        myhModule = hModule;
         Init();
     case DLL_THREAD_ATTACH:
     case DLL_THREAD_DETACH:
