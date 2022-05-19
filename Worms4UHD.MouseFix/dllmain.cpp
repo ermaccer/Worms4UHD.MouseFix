@@ -9,11 +9,11 @@ tsub_701348 sub_701348 = (tsub_701348)0x701348;
 typedef int(__cdecl* tsub_6405AC)();
 tsub_6405AC sub_6405AC = (tsub_6405AC)0x6405AC;
 
-DWORD isInGame = 0;
+DWORD isCursorVisible = 0;
 
 int WINAPI SetMousePosDirectly(int ptr, int X, int Y)
 {
-    if (*(BYTE*)isInGame)
+    if (*(BYTE*)isCursorVisible)
     {
         return 0;
     }
@@ -64,7 +64,7 @@ void Init()
     #endif 
 
     DWORD Base = (DWORD)GetModuleHandleA("WormsMayhem.exe");
-    isInGame = Base + 0x57AC96;
+    isCursorVisible = Base + 0x57AC96;
 
     #ifdef DEBUG
         printf("InGame %x\n", inGame);
